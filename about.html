@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jerome Polin</title>
+
+    <link rel="shortcut icon" href="assets/favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="preloader.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="stylesheet" href="css/transform.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="B_css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+
+    <script src="js/navbar.js" defer></script>
+    <script src="js/preloader.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/about.js" defer></script>
+    <script src="js/component.js" defer></script>
+    <script src="js/footer.js" defer></script>
+
+    <style>
+        .nav-sticky-child ul li:hover::after {
+            background-color: #1c1d20 !important;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="text-container">
+            <h1>•</h1>
+            <h1>About</h1>
+        </div>
+    </div>
+    <nav class="nav-sticky">
+        <div class="logo magnetic">
+            <a class="" href="index.html">© Jerome Polin</a>
+        </div>
+        <div class="nav-sticky-child" style="z-index: 2;">
+            <ul>
+                <li class="magnetic nav-sticky-hidden"><a href="index.html">Home</a></li>
+                <li class="magnetic nav-sticky-hidden"><a href="about.html">About</a></li>
+                <li class="magnetic nav-sticky-hidden"><a href="content.html">Content</a></li>
+                <li class="magnetic nav-sticky-hidden"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="menu-open rounded-circle position-fixed btn-cos btn-fill2 magnetic" style="border: 1px solid gray">
+        <!-- <i class="bi bi-list text-white h1 magnetic"></i> -->
+        <div class="burger magnetic">
+            <span></span>
+            <span></span>
+            <span style="margin: 0 !important;"></span>
+        </div>
+    </div>
+    <div class="nav-container">
+        <div class="menu-close text-dark">
+            <!-- <i class="bi bi-x-circle-fill h1"></i> -->
+        </div>
+        <div class="socials">
+            <div class="magnetic">
+                <a href="https://www.instagram.com/jeromepolin/">
+                    <span>instagram</span>
+                </a>
+            </div>
+            <div class="magnetic">
+                <a href="https://twitter.com/JeromePolin">
+                    <span>twitter</span>
+                </a>
+            </div>
+            <div class="magnetic">
+                <a href="https://www.youtube.com/c/nihongomantappu/featured">
+                    <span>youtube</span>
+                </a>
+            </div>
+            <div class="magnetic">
+                <a href="https://www.tiktok.com/@jeromepolin98?lang=en">
+                    <span>tiktok</span>
+                </a>
+            </div>
+        </div>
+        <nav class="menu">
+            <div class="menu__item display-4">
+                <a href="index.html" class="menu__item-link text-decoration-none text-dark">Home</a>
+                <!-- <img class="menu__item-img" src="menu-img-one.jpg" /> -->
+                <div class="marquee">
+                    <div class="marquee__inner">
+                        <span>Home - うち - Home - うち - Home - うち - Home</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__item display-4">
+                <a href="about.html" class="menu__item-link text-decoration-none text-dark">About</a>
+                <!-- <img class="menu__item-img" src="menu-img-three.jpg" /> -->
+                <div class="marquee">
+                    <div class="marquee__inner">
+                        <span>About - ごろ - About - ごろ - About - ごろ - About</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__item display-4">
+                <a href="content.html" class="menu__item-link text-decoration-none text-dark">Content</a>
+                <!-- <img class="menu__item-img" src="menu-img-three.jpg" /> -->
+                <div class="marquee">
+                    <div class="marquee__inner">
+                        <span>Content - コンテンツ - Content - コンテンツ - Content - コンテンツ - Content</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu__item display-4">
+                <a href="contact.html" class="menu__item-link text-decoration-none text-dark">Contact</a>
+                <!-- <img class="menu__item-img" src="menu-img-four.jpg" /> -->
+                <div class="marquee">
+                    <div class="marquee__inner">
+                        <span>Contact - れんらく - Contact - れんらく - Contact - れんらく -
+                            Contact</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- End navbar -->
+
+    <!-- Content -->
+
+    <div class="container-fluid" style="background-color: rgb(233, 234, 235);">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6 col-md-12">
+                    <div class="wrap-about ">
+                        <h1 style="margin-top: 170px">"Hi everyone, </h1>
+                        <h1><span style="font-size: 3.5rem;">Jerome Polin</span> here!</h1>
+                        <p class="mt-3">I am known as a <span>content creator</span> and <span>entrepreneur</span>, who
+                            has always had a big dream
+                            to improve
+                            education in Indonesia.</p>
+                        <p>A graduate of Applied <span>Mathematics at Waseda University</span>. A person who believes
+                            that all
+                            decisions in life are full of mathematical calculations. A person who believes that
+                            mathematics is not to be memorized, but to be explored.</p>
+                        <p>
+                            My love for education, <span>especially mathematics</span>, led me to obtain a Bachelor of
+                            Engineering
+                            degree in Applied Mathematics at Waseda University through a scholarship program.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="wrap-img-about d-flex justify-content-center align-items-end">
+                        <div class="img-about"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center" data-aos="fade-up">
+                        <h1 style="margin-top: 120px; color: #1C1D20;" class="text-center fw-bold underline ">My Awards
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="timeline" data-aos="fade-right" data-aos-delay="300">
+        <ol>
+            <li>
+                <div class="timeline-box-shadow">
+                    <time>2014</time> 3rd place in math Olympiad
+                </div>
+            </li>
+            <li>
+                <div class="timeline-box-shadow">
+                    <time>2015</time> 2nd Regional Champion of UNAIR National Pharmacy Olympiad
+                </div>
+            </li>
+            <li>
+                <div class="timeline-box-shadow">
+                    <time>2015</time> 1st place in National Vector Mathematics Olympiad, State University of Malang
+                </div>
+            </li>
+            <li>
+                <div class="timeline-box-shadow">
+                    <time>2016</time> 1st place in the ITS National Industrial Engineering Olympiad
+                </div>
+            </li>
+            <li>
+                <div class="timeline-box-shadow">
+                    <time>2020</time> IKAPI Awards 2020 for “Rookie of The Years” category - Mantappu Jiwa (Indonesia
+                    International Book Fair)
+                </div>
+            </li>
+            <li>
+                <div class="timeline-box-shadow">
+                    <time>2021</time> Entered into Forbes 30 Under 30 Asia
+                </div>
+            </li>
+            <li>
+                <div class="timeline-box-shadow">
+                    <time>2023</time> Entered into Fortune Indonesia 40 Under 40
+                </div>
+            </li>
+            <li>
+                <div class="timeline-box-shadow">
+                    <time>2024</time> Amazing Kids Favorite Awards 2024 (GTV) - Big Inspiration Award
+                </div>
+            </li>
+            <li></li>
+        </ol>
+
+        <div class="arrows">
+            <button class="arrow arrow__prev disabled" disabled>
+                <i class="bi bi-arrow-left-circle-fill"></i>
+            </button>
+            <button class="arrow arrow__next">
+                <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+        </div>
+    </section>
+
+
+    <div class="container-fluid section-biodata">
+        <div class="container">
+            <div class="row">
+                <div class="col-11 offset-1">
+                    <div class="heading-biodata underline" style="width: max-content;" data-aos="fade-up">
+                        <h1 class="fw-bold">Biodata</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class=" offset-1 col-5 biodata-info-1">
+                    <p data-aos="fade-right">Full Name</p>
+                    <p data-aos="fade-right">Nickname</p>
+                    <p data-aos="fade-right">DOB</p>
+                    <p data-aos="fade-right">Nationality</p>
+                    <p data-aos="fade-right">Height</p>
+                    <p data-aos="fade-right">Zodiac</p>
+                    <p data-aos="fade-right">Religion</p>
+                    <p data-aos="fade-right">Education</p>
+                </div>
+                <div class="  offset-1 col-5 biodata-info-2">
+                    <p data-aos="fade-left">Jerome Polin Sijabat</p>
+                    <p data-aos="fade-left">Jerome, Jer, Bang Jer</p>
+                    <p data-aos="fade-left">Jakarta, May 2nd 1998</p>
+                    <p data-aos="fade-left">Indonesian</p>
+                    <p data-aos="fade-left">175 CM</p>
+                    <p data-aos="fade-left">Taurus</p>
+                    <p data-aos="fade-left">Christian</p>
+                    <p data-aos="fade-left">SMAN 5 Surabaya (Science)</p>
+                    <p data-aos="fade-left">Waseda University (Applied Mathematics)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer -->
+    <div class="container-fluid contact-footer">
+        <div class="body-footer">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-10">
+                    <div class="title-footer">
+                        <span>
+                            <div class="imageContainer">
+                                <img src="assets/profile1.png" alt="image" style="width: 100%; height: 100%;" />
+                            </div>
+                            <h2 data-aos="fade-right">Let's Start a</h2>
+                        </span>
+                        <h2 data-aos="fade-right">Colaborate</h2>
+                        <div style="display: flex; justify-content: flex-end; font-size: 1rem;"><i class="bi bi-arrow-down-left"></i></div>
+                        <div class="buttonContainer" style="transform: translateX(0);">
+                            <a href="contact.html">
+                                <div class="button btn-cos-rounded btn-fill2 magnetic" data-aos="flip-right">
+                                    <p class="magnetic">Get in touch</p>
+                                </div>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="row">
+                    <div class="col-1"></div>
+                    <div class="col-10">
+                        <div class="contact-details">
+                            <div class="btn-wrap" data-aos="fade-up">
+                                <a href="partnership@mantappu.com">
+                                    <div class="btn-footer btn-cos btn-fill2 magnetic">
+                                        <p class="magnetic">partnership@mantappu.com</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="btn-wrap" data-aos="fade-up" data-aos-delay="300">
+                                <a href="https://wa.me/6282230193060">
+                                    <div class="btn-footer btn-cos btn-fill2 magnetic">
+                                        <p class="magnetic">(+62) 818 0401 3060</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="contact-footer-info">
+                        <div class="body-footer-info">
+                            <div class="info-contact">
+                                <div>
+                                    <span>
+                                        <h3>Version</h3>
+                                        <p>2024 © Edition</p>
+                                    </span>
+                                    <span>
+                                        <h3>Local Time</h3>
+                                        <p id="time"></p>
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        <h3>Socials</h3>
+                                        <div>
+                                            <a href="https://www.instagram.com/jeromepolin/">
+                                                <p class="magnetic">Instagram</p>
+                                            </a>
+                                        </div>
+                                    </span>
+                                    <div>
+                                        <a href="https://twitter.com/JeromePolin">
+                                            <p class="magnetic">Twitter</p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.youtube.com/c/nihongomantappu/featured">
+                                            <p class="magnetic">YouTube</p>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="https://www.tiktok.com/@jeromepolin98?lang=en">
+                                            <p class="magnetic">Tiktok</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- End Footer -->
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="B_js/bootstrap.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+</body>
+
+</html>

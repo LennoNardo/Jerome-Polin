@@ -1,0 +1,283 @@
+.logo a {
+    color: black !important;
+
+}
+
+.nav-sticky-child ul li a {
+    color: black !important;
+}
+
+.wrap-about {
+    height: 100%;
+    width: 100%;
+}
+
+.wrap-about span{
+    font-weight: bold;
+    
+}
+
+.wrap-about h1 {
+    font-size: 2.8rem;
+    align-self: flex-start;
+    width: 100%;
+    color: #1C1D20;
+    /* Tambahan untuk memastikan h1 memenuhi lebar kontainer */
+}
+
+.wrap-about p {
+    font-size: 1.2rem;
+}
+
+.wrap-about h1, .wrap-about p {
+    word-wrap: break-word !important; /* atau */
+}
+
+.wrap-img-about {
+    height: 100vh;
+}
+
+.img-about {
+    height: 600px;
+    width: 70%;
+    background-image: url(/assets/imgAbout1.png);
+    background-size: cover;
+    background-position: bottom;
+
+}
+
+.section-biodata{
+    background-color: #F9F9F9;
+}
+
+.heading-biodata{
+    margin: 150px 0 32px 0;
+}
+
+/* .heading-biodata h1{
+    
+} */
+/* font-weight: bold; */
+
+.biodata-info-1{
+    margin-bottom: 150px;
+}
+.biodata-info-1 p{
+    color: #16151975;
+    font-size: 1.3rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+
+.biodata-info-2 p{
+    font-weight: bold;
+    font-size: 1.3rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+@media (max-width:767px) {
+    .biodata-info-1 p, .biodata-info-2 p{
+        font-size: 0.9rem;
+    }
+    
+}
+
+.contact-footer {
+    margin-top: 0 !important;
+}
+
+/* TIMELINE
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline {
+    white-space: nowrap;
+    overflow-x: hidden;
+}
+
+.timeline ol {
+    font-size: 0;
+    width: 100vw;
+    padding: 250px 0;
+    transition: all 1s;
+}
+
+.timeline ol li {
+    position: relative;
+    display: inline-block;
+    list-style-type: none;
+    width: 160px;
+    height: 3px;
+    background: #635D6FA6;
+}
+
+.timeline ol li:last-child {
+    width: 280px;
+}
+
+.timeline ol li:not(:first-child) {
+    margin-left: 14px;
+}
+
+.timeline ol li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 1px);
+    bottom: 0;
+    width: 12px;
+    height: 12px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: #1C1D20;
+}
+
+.timeline-box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.timeline ol li div {
+    position: absolute;
+    left: calc(100% + 7px);
+    width: 280px;
+    padding: 15px;
+    font-size: 1rem;
+    white-space: normal;
+    color: #1C1D20;
+    background: #fff;
+}
+
+.timeline ol li div::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+.timeline ol li:nth-child(odd) div {
+    top: -16px;
+    transform: translateY(-100%);
+}
+
+.timeline ol li:nth-child(odd) div::before {
+    top: 100%;
+    border-width: 8px 8px 0 0;
+    border-color: white transparent transparent transparent;
+}
+
+.timeline ol li:nth-child(even) div {
+    top: calc(100% + 16px);
+}
+
+.timeline ol li:nth-child(even) div::before {
+    top: -8px;
+    border-width: 8px 0 0 8px;
+    border-color: transparent transparent transparent white;
+}
+
+.timeline time {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* TIMELINE ARROWS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline .arrows {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.timeline .arrows .arrow__prev {
+    margin-right: 20px;
+}
+
+.timeline .disabled {
+    opacity: 0.5;
+}
+
+.timeline .arrows img {
+    width: 45px;
+    height: 45px;
+}
+.timeline .arrows i {
+    font-size: 45px;
+}
+
+.arrows button{
+    background-color: transparent;
+    border: none;
+    color: #1C1D20;
+}
+
+/* GENERAL MEDIA QUERIES
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (max-width: 599px) {
+
+    .timeline ol,
+    .timeline ol li {
+        width: auto;
+    }
+
+    .timeline ol {
+        padding: 0;
+        transform: none !important;
+    }
+
+    .timeline ol li {
+        display: block;
+        height: auto;
+        background: transparent;
+    }
+
+    .timeline ol li:first-child {
+        margin-top: 25px;
+    }
+
+    .timeline ol li:not(:first-child) {
+        margin-left: auto;
+    }
+
+    .timeline ol li div {
+        position: static;
+        width: 94%;
+        height: auto !important;
+        margin: 0 auto 25px;
+    }
+
+    .timeline ol li:nth-child(odd) div {
+        transform: none;
+    }
+
+    .timeline ol li:nth-child(odd) div::before,
+    .timeline ol li:nth-child(even) div::before {
+        left: 50%;
+        top: 100%;
+        transform: translateX(-50%);
+        border: none;
+        border-left: 1px solid white;
+        height: 25px;
+    }
+
+    .timeline ol li:last-child,
+    .timeline ol li:nth-last-child(2) div::before,
+    .timeline ol li:not(:last-child)::after,
+    .timeline .arrows {
+        display: none;
+    }
+}

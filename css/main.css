@@ -1,0 +1,306 @@
+.hero {
+    height: 100% !important;
+    width: 100% !important;
+    background-image: url(/assets/heroSection.png);
+    background-size: cover !important;
+    background-position: center;
+    position: relative;
+}
+
+.hero-description1 {
+    background-color: #1C1D20;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    position: absolute;
+    top: 42%;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-description1 p {
+    margin: 0;
+}
+
+.hero-description2 {
+    position: absolute;
+    top: 29%;
+    left: 71%;
+    color: white;
+    font-size: clamp(1.55em, 2.3vw, 2.5em);
+    font-weight: 300;
+}
+
+.hero-description2 p {
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.hero-description2 svg {
+    transform: scale(2);
+    margin-bottom: 90px;
+}
+
+
+
+.jeromeHome {
+    width: 900px;
+    height: auto;
+    overflow: hidden;
+}
+
+/* .marquee__part-infinite {
+    flex-shrink: 0;
+    padding: 0 0.15em;
+    font-smooth: always;
+    z-index: auto;
+}
+
+.marquee__part-infinite::after {
+    content: "—";
+}
+
+.marquee-infinite {
+    background: transparent;
+    color: #EEE;
+    font-weight: 450;
+    font-size: 14vw;
+    padding: 0;
+    position: absolute;
+}
+
+.marquee__inner-infinite {
+    -webkit-font-smoothing: antialiased;
+    width: fit-content;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+} */
+
+.marquee-infinite {
+    background: transparent;
+    color: #EEE;
+    font-weight: 450;
+    font-size: 14vw;
+    padding: 0;
+    position: absolute; /* Tetap menggunakan absolute untuk bottom-0 */
+    bottom: 0; /* Bottom positioning */
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.marquee__inner-infinite {
+    -webkit-font-smoothing: antialiased;
+    width: fit-content;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+}
+
+.marquee__part-infinite {
+    flex-shrink: 0;
+    padding: 0 0.15em;
+    font-smooth: always;
+    z-index: auto;
+}
+
+.marquee__part-infinite::after {
+    content: "—";
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .marquee-infinite {
+        font-size: 15vw; /* Smaller font size for mobile screens */
+    }
+}
+
+@media (min-width: 1200px) {
+    .marquee-infinite {
+        font-size: 10vw; /* Set max font size for larger screens */
+    }
+}
+
+
+
+
+@media (max-width:768px) {
+    .hero-description1{
+        display: none !important;
+    }
+
+    .hero-description2{
+        top: 70%;
+        left: 10%;
+    }
+
+    .marquee-infinite{
+        top: 50%;
+    }
+
+    .hero-description2 svg{
+        margin-bottom: 70px;
+    }
+
+}
+
+
+.spacer {
+    height: 150px;
+}
+
+.deskripsi {
+    height: auto;
+    width: 100%;
+    color: #1C1D20;
+}
+
+.deskripsi-teks {
+    padding: 120px 0;
+    /* font-weight: 450; */
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.deskripsi-teks p {
+    padding-top: 24px;
+}
+
+.deskripsi-channel {
+    /* margin-top: 80px; */
+    /* height: 100%;
+    width: 100%; */
+    color: #1C1D20;
+    background-color: #F9F9F9;
+    padding: 120px 0;
+}
+
+
+.text-channel {
+    padding-left: 32px;
+}
+
+.wrap-yt-info {
+    display: flex;
+    margin-top: 24px;
+}
+
+.yt-info {
+    border-top: 1px solid #635D6FA6;
+    margin-right: 32px;
+    padding-top: 24px;
+}
+
+.yt-info span {
+    font-weight: 600;
+    padding-top: 12px;
+    font-size: 2rem;
+}
+
+.yt-info p {
+    padding-top: 12px;
+    color: #7A7A7A;
+}
+
+.img-yt {
+    width: 100%;
+    height: 500px;
+    background-image: url(/assets/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+
+
+.founder {
+    height: auto;
+    width: 100%;
+    color: #1C1D20;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+
+.founder-card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    /* Memusatkan konten di dalam founder-card secara horizontal */
+    height: 100%;
+    /* Pastikan elemen `founder-card` memiliki tinggi penuh */
+
+}
+
+.founder-card img {
+    display: block;
+    /* Menghilangkan jarak bawaan gambar */
+    margin: 0 auto;
+    /* Memusatkan gambar secara horizontal */
+    max-width: 100%;
+    /* Agar gambar tidak melebihi lebar kotak */
+    height: auto;
+    /* Mempertahankan rasio aspek gambar */
+
+}
+
+.founder-card p {
+    text-align: justify;
+    padding: 0 1.5em;
+    font-size: 1.1rem;
+}
+
+.btn-custom {
+    border: none;
+    background-color: #1C1D20;
+    border-radius: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    width: max-content;
+}
+
+.btn-custom p {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0;
+    padding: 1.4rem 2.25rem !important;
+}
+
+.btn-custom a {
+    text-decoration: none;
+}
+
+
+@media (max-width:992px) {
+    /* .founder {
+        margin-bottom: 800px;
+    } */
+
+    .text-channel {
+        margin-top: 40px;
+        padding-left: 0;
+    }
+
+    .yt-info {
+        border-top: 1px solid #635D6FA6;
+        margin-right: 32px;
+        padding-top: 24px;
+    }
+    .yt-info span {
+        font-weight: 600;
+        padding-top: 12px;
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:576px) {
+    /* .founder {
+        margin-bottom: 1000px;
+    } */
+
+}

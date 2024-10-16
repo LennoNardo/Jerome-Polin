@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 400;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+	overflow-x: hidden !important;
+}
+
+body::-webkit-scrollbar {
+	width: 0px; /* atau 0px jika Anda ingin menyembunyikan scrollbar */
+    background: transparent; /* membuat background scrollbar menjadi transparan */
+}
+
+
+.nav-sticky {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding-left: 40px;
+	padding-top: 32px;
+	position: absolute;
+	background-color: transparent;
+	
+    }
+
+
+.logo a {
+	text-decoration: none;
+	color: white;
+	font-style: normal;
+    letter-spacing: normal;
+    font-weight: 450 !important;
+	font-size: clamp(16px, 1.2vw, 19px);
+    }
+
+.nav-sticky-child{
+	margin-right: 40px;
+}
+
+.nav-sticky-child ul li {
+    position: relative;
+    width: max-content;
+}
+
+.nav-sticky-child ul li:hover::after {
+    content: '';
+    border-radius: 50%;
+    background-color: #fff;
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+	
+
+.nav-sticky-child ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-style: normal;
+	margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+    }
+
+.nav-sticky-child ul li {
+	margin-left: 40px;
+	color: #fff;
+	cursor: pointer;
+    }
+
+.nav-sticky-child ul li a {
+	font-size: clamp(16px, 1.2vw, 19px);
+	color: white;
+    font-weight: 450;
+    letter-spacing: normal;
+	gap: 12px;
+	font-style: normal;
+	text-decoration: none;
+	cursor: pointer;
+    }
+
+
+
+.menu-open {
+	padding: 25px 20px !important;
+	margin-top: 30px;
+	margin-right: 40px;
+	background-color: #1c1d20;
+	color: #fff;
+	/* font-size: 20px; */
+	cursor: pointer;
+	z-index: 3;
+	border: 1px solid rgba(255, 255, 255, 0.2);;
+}
+
+
+.menu-open,
+.menu-close {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 28px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.socials {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 40px 6.25em;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.socials div{
+	margin: 0.5em 1.25em;
+}
+
+.socials a{
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.socials span {
+	text-transform: uppercase;
+	letter-spacing: 0px;
+	width: max-content;
+}
+
+.socials span::after{
+	content: "";
+    width: 0%;
+    height: 1px;
+    background-color: #ffffff;
+    display: block;
+    margin-top: 2px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.2s linear;
+}
+
+.socials span:hover::after {
+    width: 100%;
+}
+
+.nav-container {
+	z-index: 2;
+	position: fixed;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: #1C1D20;
+}
+
+.menu__item {
+	position: relative;
+	padding: 0 6vw;
+}
+
+.menu__item a{
+	color: #ffffff !important;
+}
+
+.menu__item-link {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	transition: opacity 0.4s;
+}
+
+.menu__item-link::before {
+	all: initial;
+	counter-increment: menu;
+	position: absolute;
+	bottom: 60%;
+	left: 0;
+	pointer-events: none;
+}
+
+.menu__item-link:hover {
+	transition-duration: 0.1s;
+	opacity: 0;
+}
+
+.menu__item-img {
+	z-index: 2;
+	pointer-events: none;
+	position: absolute;
+	height: 12vh;
+	max-height: 600px;
+	opacity: 0;
+	left: 8%;
+	top: 10%;
+	transform: scale(0);
+}
+
+.menu__item-link:hover + .menu__item-img {
+	opacity: 1;
+	transform: scale(1);
+	transition: all 0.4s;
+}
+
+.menu {
+	padding: 10vh 0 25vh;
+	--offset: 20vw;
+	--move-initial: calc(-25% + var(--offset));
+	--move-final: calc(-50% + var(--offset));
+	font-size: 7vw;
+	background: #1c1d20;
+}
+
+.marquee {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	color: rgb(214, 214, 214);
+	pointer-events: none;
+}
+
+.marquee__inner {
+	width: fit-content;
+	display: flex;
+	position: relative;
+	opacity: 0;
+	transition: all 0.1s;
+	transform: translateX(60px);
+}
+
+.menu__item-link:hover ~ .marquee .marquee__inner {
+	opacity: 1;
+	transform: translateX(0px);
+	transition-duration: 0.4s;
+}
+
+.menu__item-link,
+.marquee span {
+	white-space: nowrap;
+	font-size: 7vw;
+	padding: 0 1vw;
+	line-height: 1.15;
+}
+
+.marquee span {
+	font-style: italic;
+}
+
+@media (max-width: 576px) {
+	.nav-sticky-hidden {
+		display: none;
+	}
+	.menu-hidden-sticky {
+		display: block;
+	}
+}
+
+@media (min-width: 576px) {
+	.menu-hidden-sticky {
+		display: none;
+	}
+}
+
+
+
+
+
+.menu-open {
+    transition: opacity 0.5s ease, transform 0.5s ease, pointer-events 0.5s ease;
+    opacity: 0; /* Mulai dalam keadaan tidak terlihat */
+    transform: translateY(-50px); /* Mulai dalam keadaan di atas posisi */
+    pointer-events: none; /* Mulai dalam keadaan tidak dapat diklik */
+}
+
+@media (max-width: 576px) {
+    .menu-open {
+        opacity: 1; /* Tampil selalu pada layar <= 576px */
+        transform: translateY(0); /* Pastikan posisi tidak terangkat */
+        pointer-events: auto; /* Selalu dapat diklik pada layar <= 576px */
+    }
+}
+
+.underline {
+	position: relative;
+	
+  }
+  
+  .underline:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	border-top: solid 3px #1C1D20;
+	left: 0;
+	bottom: -10px;
+	border-radius: 50%;
+	height: 8px;
+  }
+
+
+  .burger {
+    cursor: pointer;
+    width: 35px;
+    /* margin: 50px auto; */
+}
+
+.burger span{
+    display: block;
+    width: 35px;
+    height: 2px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+    transition: all .3s ease-in-out;
+}
+
+.burger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 12px;
+}
+
+.burger.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: -12px;
+}

@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Jerome Polin</title>
+
+      <link rel="shortcut icon" href="assets/favicon2.png" type="image/x-icon">
+      <link rel="stylesheet" type="text/css" href="css/navbar.css">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/preloader.css">
+      <link rel="stylesheet" href="css/transform.css">
+      <link rel="stylesheet" href="css/footer.css">
+      <link rel="stylesheet" href="B_css/bootstrap.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+      <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+      <script src="https://cdn.lordicon.com/lordicon.js"></script>
+
+      <script src="js/navbar.js" defer></script>
+      <script src="js/preloader.js" defer></script>
+      <script src="js/main.js" defer></script>
+      <script src="js/footer.js" defer></script>
+      <script src="js/component.js" defer></script>
+
+
+</head>
+
+<body>
+      <div class="preloader">
+            <div class="text-container">
+                  <h1>•</h1>
+                  <h1>Hallo</h1>
+                  <h1>Minnasan</h1>
+                  <h1>Konnijiwaa</h1>
+            </div>
+      </div>
+      <nav class="nav-sticky" style="z-index: 99;">
+            <div class="logo magnetic">
+                  <a class="" href="index.html">© Jerome Polin</a>
+            </div>
+            <div class="nav-sticky-child">
+                  <ul>
+                        <li class="magnetic nav-sticky-hidden"><a href="index.html">Home</a></li>
+                        <li class="magnetic nav-sticky-hidden"><a href="about.html">About</a></li>
+                        <li class="magnetic nav-sticky-hidden"><a href="content.html">Content</a></li>
+                        <li class="magnetic nav-sticky-hidden"><a href="contact.html">Contact</a></li>
+                  </ul>
+            </div>
+      </nav>
+      <div class="menu-open rounded-circle position-fixed btn-cos btn-fill2 magnetic">
+            <!-- <i class="bi bi-list text-white h1 magnetic"></i> -->
+            <div class="burger magnetic">
+                  <span></span>
+                  <span></span>
+                  <span style="margin: 0 !important;"></span>
+            </div>
+      </div>
+      <div class="nav-container">
+            <div class="menu-close text-dark">
+                  <!-- <i class="bi bi-x-circle-fill h1"></i> -->
+
+            </div>
+            <div class="socials">
+                  <div class="magnetic">
+                        <a href="https://www.instagram.com/jeromepolin/">
+                              <span>instagram</span>
+                        </a>
+                  </div>
+                  <div class="magnetic">
+                        <a href="https://twitter.com/JeromePolin">
+                              <span>twitter</span>
+                        </a>
+                  </div>
+                  <div class="magnetic">
+                        <a href="https://www.youtube.com/c/nihongomantappu/featured">
+                              <span>youtube</span>
+                        </a>
+                  </div>
+                  <div class="magnetic">
+                        <a href="https://www.tiktok.com/@jeromepolin98?lang=en">
+                              <span>tiktok</span>
+                        </a>
+                  </div>
+            </div>
+            <nav class="menu">
+                  <div class="menu__item display-4">
+                        <a href="index.html" class="menu__item-link text-decoration-none text-dark">Home</a>
+                        <!-- <img class="menu__item-img" src="menu-img-one.jpg" /> -->
+                        <div class="marquee">
+                              <div class="marquee__inner">
+                                    <span>Home - うち - Home - うち - Home - うち - Home</span>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="menu__item display-4">
+                        <a href="about.html" class="menu__item-link text-decoration-none text-dark">About</a>
+                        <!-- <img class="menu__item-img" src="menu-img-three.jpg" /> -->
+                        <div class="marquee">
+                              <div class="marquee__inner">
+                                    <span>About - ごろ - About - ごろ - About - ごろ - About</span>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="menu__item display-4">
+                        <a href="content.html" class="menu__item-link text-decoration-none text-dark">Content</a>
+                        <!-- <img class="menu__item-img" src="menu-img-three.jpg" /> -->
+                        <div class="marquee">
+                              <div class="marquee__inner">
+                                    <span>Content - コンテンツ - Content - コンテンツ - Content - コンテンツ - Content</span>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="menu__item display-4">
+                        <a href="contact.html" class="menu__item-link text-decoration-none text-dark">Contact</a>
+                        <!-- <img class="menu__item-img" src="menu-img-four.jpg" /> -->
+                        <div class="marquee">
+                              <div class="marquee__inner">
+                                    <span>Contact - れんらく - Contact - れんらく - Contact - れんらく -
+                                          Contact</span>
+                              </div>
+                        </div>
+                  </div>
+            </nav>
+      </div>
+      <!-- End navbar -->
+
+      <!-- Content -->
+
+      <!-- Hero Section -->
+      <div class="hero">
+            <div class="marquee-infinite bottom-0 fade-up-gsap">
+                  <div class="marquee__inner-infinite" aria-hidden="true" ref="inner">
+                        <div class="marquee__part-infinite">
+                              Jerome Polin
+                        </div>
+                        <div class="marquee__part-infinite">
+                              Jerome Polin
+                        </div>
+                        <div class="marquee__part-infinite">
+                              Jerome Polin
+                        </div>
+
+                        <div class="marquee__part-infinite">
+                              Jerome Polin
+                        </div>
+                  </div>
+            </div>
+            <div class="hero-description1 fade-up-gsap">
+                  <div style="padding-left: 40px;">
+                        <p>Located in</p>
+                        <p>Indonesia</p>
+                  </div>
+                  <div style="padding: 12px 40px 0 28px;">
+                        <lord-icon src="https://cdn.lordicon.com/trkmlure.json" trigger="loop"
+                              colors="primary:#ffffff,secondary:#ffffff" style="width:90px;height:90px">
+                        </lord-icon>
+                  </div>
+            </div>
+            <div class="hero-description2 fade-up-gsap">
+                  <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 8.5C8.27614 8.5 8.5 8.27614 8.5 8L8.5 3.5C8.5 3.22386 8.27614 3 8 3C7.72386 3 7.5 3.22386 7.5 3.5V7.5H3.5C3.22386 7.5 3 7.72386 3 8C3 8.27614 3.22386 8.5 3.5 8.5L8 8.5ZM0.646447 1.35355L7.64645 8.35355L8.35355 7.64645L1.35355 0.646447L0.646447 1.35355Z"
+                              fill="white" />
+                  </svg>
+                  <p>Content Creator</p>
+                  <p>Education & Entrepreneur</p>
+            </div>
+      </div>
+
+
+      <!-- End Hero Section -->
+
+
+      <!-- Content -->
+
+      <div class="container-fluid deskripsi">
+            <div class="container">
+                  <div class="row ">
+                        <div class="col-12 deskripsi-teks fw-normal">
+                              <h1 data-aos="fade-up">
+                                    <span class="fw-bold">Jerome Polin Sijabat</span>
+                              </h1>
+                              <p data-aos="fade-up">
+                                    I am widely known as the co-founder of Nihongo Mantappu YouTube channel, co-founder
+                                    of Mantappu Corp, and Founder of Menantea Group who has established himself as a
+                                    household
+                                    name in Indonesia’s YouTube community. Through my channel, I shares my knowledge
+                                    about
+                                    Mathematics, Indonesia, and Japanese. I'm a Mitsui Bussan scholarship awardee and
+                                    graduated from Waseda University with GPA 4.00. I was featured in Forbes 30 under 30
+                                    Asia
+                                    in 2021 alongside with my brother, Jehian Panangian Sijabat.
+                              </p>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <div class="container-fluid deskripsi-channel">
+            <div class="container">
+                  <div class="row ">
+                        <div class="col-lg-5 col-md-12 d-flex justify-content-center align-items-center "
+                              data-aos="fade-up">
+                              <div class="img-yt"></div>
+                              <!-- <img src="assets/img1.jpg" alt="" style="border-radius: 10px; height: 500px"> -->
+                        </div>
+                        <div class=" col-lg-7 col-md-12 order-md-2 order-1 ">
+                              <div class="text-channel" data-aos="fade-up" data-aos-delay="300">
+                                    <h1 class="text-start fw-bold "> <i class="bi bi-youtube" style="color: red ;"></i>
+                                          Nihongo Mantappu Channel </h1>
+                                    <p style="font-size: 1.1rem; padding-top: 24px; text-align:justify;">
+                                          So, on the <span class="fw-bold">Nihongo Mantappu channel</span> and my
+                                          personal channel, we discuss a lot
+                                          about
+                                          <span class="fw-bold">daily life in Japan</span>, especially when I was still
+                                          a student at Waseda. Apart
+                                          from
+                                          that, there is also exciting content about <span class="fw-bold">learning
+                                                Japanese, mathematics, and
+                                                tips
+                                                for those of you who want to study abroad</span>. Anyway, here you can
+                                          feel how
+                                          exciting it
+                                          is to learn while having fun! Don't forget to watch the Waseda Boys videos
+                                          too! We
+                                          often create content together and it's sure to make you laugh. Oh yes, now I'm
+                                          also
+                                          focusing on making deeper educational content, so for those of you who want to
+                                          learn
+                                          more, don't miss my videos!
+                                    </p>
+                                    <div class="wrap-yt-info">
+                                          <div class="yt-info" data-aos="fade-up" data-aos-delay="400">
+                                                <span >10 Million +</span>
+                                                <p>Subscribers</p>
+                                          </div>
+                                          <div class="yt-info " data-aos="fade-up" data-aos-delay="500">
+                                                <span >1 Thousand +</span>
+                                                <p>Videos</p>
+                                          </div>
+                                          <div class="yt-info" data-aos="fade-up" data-aos-delay="600">
+                                                <span >2 Billion +</span>
+                                                <p>Views</p>
+                                          </div>
+                                    </div>
+                                    <!-- <button class="btn-custom btn-fill btn-fill1" style="margin-top: 30px;">
+                                          Visit the Channel <i class="bi bi-arrow-up-right"
+                                                style="margin-left: 4px;"></i>
+                                    </button> -->
+                                    <div class="btn-custom btn-cos btn-fill2 magnetic" style="margin-top: 30px;"
+                                          data-aos="fade-up" data-aos-delay="700">
+                                          <a href="https://www.youtube.com/c/nihongomantappu/featured">
+                                                <p class="magnetic">Visit the Channel <i class="bi bi-arrow-up-right"
+                                                            style="margin-left: 4px;"></i></p>
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <div class="container-fluid founder">
+            <div class="container">
+                  <div class="row ">
+                        <div class="col-12 text-center" style="padding-bottom: 24px;">
+                              <div class="d-flex justify-content-center " data-aos="fade-up">
+                                    <h1 class="fw-bold underline">Founder</h1>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="row ">
+                        <div class="col-lg-4 col-12 mt-3">
+                              <div class="founder-card" data-aos="fade-down" data-aos-delay="200">
+                                    <img src="assets/manttappuCorp.png" alt="">
+                                    <p>
+                                          <span class="fw-bold">Mantappu Corp</span> is a talent management company
+                                          developed by me and my friends.
+                                          Currently Mantappu Corp has helped dozens of content creators and other brands
+                                          collaborating in the form of Talent Companies. Mantappu Corp promises to
+                                          provide high quality KOL through a unique group of talents that we manage,
+                                          consisting of Indonesian and overseas talents.
+                                    </p>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-12 mt-3">
+                              <div class="founder-card" data-aos="fade-down" data-aos-delay="400">
+                                    <img src="assets/menantea.png" alt="">
+                                    <p>
+                                          <span class="fw-bold">Menantea</span> is a fusion tea drink brand initiated by
+                                          me and my brother, Jehian
+                                          Panangian Sianggaran. Menantea has an image as a brand that is transparent and
+                                          close to its consumers. Menantea gives its fans a nickname, namely Neteazen.
+                                    </p>
+                              </div>
+                        </div>
+                        <div class="col-lg-4 col-12 mt-3">
+                              <div class="founder-card " data-aos="fade-down" data-aos-delay="600">
+                                    <img src="assets/mantappuAcademy.png" alt="">
+                                    <p>
+                                          <span class="fw-bold">Mantappu Academy</span> is a tutoring institution
+                                          (bimbel) that offers various
+                                          programs, from college entrance exam preparation to interest and talent
+                                          development programs. One of the well-known programs is the National Selection
+                                          Based Test (SNBT) preparation program.
+                                    </p>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <!-- End Content -->
+
+      <!-- Footer -->
+
+      <div class="container-fluid contact-footer" style="margin-top: 0 !important;">
+            <div class="body-footer">
+                  <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-10">
+                              <div class="title-footer">
+                                    <span>
+                                          <div class="imageContainer">
+                                                <img src="assets/profile1.png" alt="image"
+                                                      style="width: 100%; height: 100%;" />
+                                          </div>
+                                          <h2 data-aos="fade-right">Let's Start a</h2>
+                                    </span>
+                                    <h2 data-aos="fade-right">Colaborate</h2>
+                                    <div style="display: flex; justify-content: flex-end; font-size: 1rem;"><i class="bi bi-arrow-down-left"></i></div>
+                                    <div class="buttonContainer" style="transform: translateX(0);">
+                                          <a href="contact.html">
+                                                <div class="button btn-cos-rounded btn-fill2 magnetic"
+                                                      data-aos="flip-right">
+                                                      <p class="magnetic">Get in touch</p>
+                                                </div>
+                                          </a>
+
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-1"></div>
+                        <div class="row">
+                              <div class="col-1"></div>
+                              <div class="col-10">
+                                    <div class="contact-details">
+                                          <div class="btn-wrap" data-aos="fade-up">
+                                                <a href="partnership@mantappu.com">
+                                                      <div class="btn-footer btn-cos btn-fill2 magnetic">
+                                                            <p class="magnetic">partnership@mantappu.com</p>
+                                                      </div>
+                                                </a>
+                                          </div>
+                                          <div class="btn-wrap" data-aos="fade-up" data-aos-delay="300">
+
+                                                <a href="https://wa.me/6282230193060">
+                                                      <div class="btn-footer btn-cos btn-fill2 magnetic">
+                                                            <p class="magnetic">(+62) 818 0401 3060</p>
+                                                      </div>
+                                                </a>
+                                          </div>
+
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="row">
+                        <div class="col-12">
+                              <div class="contact-footer-info">
+                                    <div class="body-footer-info">
+                                          <div class="info-contact">
+                                                <div>
+                                                      <span>
+                                                            <h3>Version</h3>
+                                                            <p>2024 © Edition</p>
+                                                      </span>
+                                                      <span>
+                                                            <h3>Local Time</h3>
+                                                            <p id="time"></p>
+                                                      </span>
+                                                </div>
+                                                <div>
+                                                      <span>
+                                                            <h3>Socials</h3>
+                                                            <div>
+                                                                  <a href="https://www.instagram.com/jeromepolin/">
+                                                                        <p class="magnetic">Instagram</p>
+                                                                  </a>
+                                                            </div>
+                                                      </span>
+                                                      <div>
+                                                            <a href="https://twitter.com/JeromePolin">
+                                                                  <p class="magnetic">Twitter</p>
+                                                            </a>
+                                                      </div>
+                                                      <div>
+                                                            <a
+                                                                  href="https://www.youtube.com/c/nihongomantappu/featured">
+                                                                  <p class="magnetic">YouTube</p>
+                                                            </a>
+                                                      </div>
+                                                      <div>
+                                                            <a href="https://www.tiktok.com/@jeromepolin98?lang=en">
+                                                                  <p class="magnetic">Tiktok</p>
+                                                            </a>
+                                                      </div>
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+            </div>
+      </div>
+
+
+      <!-- End Footer -->
+
+
+      <script src="B_js/bootstrap.js"></script>
+      <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="https://unpkg.com/split-type"></script>
+      <script>AOS.init();</script>
+</body>
+
+</html>

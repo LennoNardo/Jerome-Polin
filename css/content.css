@@ -1,0 +1,136 @@
+.logo a {
+	color: black !important;
+    
+    }
+
+.nav-sticky-child ul li a {
+	color: black !important;
+    }
+
+
+.heading-text {
+    margin: 200px 0px 50px 0px;
+}
+.heading-text1 {
+    margin: 100px 0px 0px 0px;
+}
+
+.card-heading {
+    padding-top: 80px;
+}
+
+.card-heading-child {
+    position: relative;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 24px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: linear-gradient(rgba(0, 0, 0, 0), 100%);
+    
+}
+
+.card-heading-child img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.card-heading-child:hover{
+    transform: translateY(-10px);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+.card-heading-child::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgb(62, 62, 62) 100%);
+    pointer-events: none; /* Agar overlay tidak mengganggu interaksi dengan elemen di bawahnya */
+    border-radius: 10px; /* Memastikan overlay mengikuti border-radius */
+}
+
+.card-text {
+    width: max-content;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding: 5px;
+}
+
+.card-text h4 {
+    margin-bottom: 0rem !important;
+    padding: 8px 0;
+    /* font-size: 1.5rem; */
+}
+
+.card-heading-child h4::after{
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    display: block;
+    margin-top: 2px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.2s linear;
+}
+
+.card-heading-child:hover h4::after {
+    width: 100%;
+}
+
+
+.box-heading {
+    /* margin: 92px 0px 0px 98px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-heading h3 {
+    padding-left: 20px;
+}
+
+.box-heading h5 {
+    color: gray;
+}
+
+.content-link {
+    margin-left: auto;
+    /* padding-right: 98px; */
+}
+
+.content-link a{
+    color: black;
+    text-decoration: none;
+	cursor: pointer;
+}
+
+.content-link a::after{
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: black;
+    display: block;
+    margin-top: 2px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.2s linear;
+}
+
+.content-link a:hover::after {
+    width: 100%;
+}
+
+
+
